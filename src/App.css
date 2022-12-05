@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+main {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 800px;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ .title h1{
+  color: #ee6c4d;
+  margin: 50px 0px;
+  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form{
   display: flex;
   flex-direction: column;
+
+}
+
+form  label{
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+form input{
+  font-size: 24px;
+  margin-bottom: 30px;
+  background-color: #e8fbfc;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+/* 
+form button{
+  padding: 10px;
+  margin-left: 30px;
+  border-radius: 5px;
+  background: rgb(117, 170, 231);
+  border: none;
+  cursor: pointer;
+  color: white; */
+
+
+form input:focus, button:focus {
+  outline: epx solid #ee6c4d;
+}
+
+.zipCode {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+}
+.zipCode input{
+  margin: 0;
+
+}
+.zipCode button{
+  padding: 10px;
+  margin-left: 30px;
+  border-radius: 5px;
+  background:#ee6c4d;
+    border: none;
+  cursor: pointer;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.zipCode button:disabled{
+  cursor: not-allowed;
+  background-color: transparent;
+  border: 1px solid #ee6c4d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.zipCode button:hover:enabled{
+  background-color: #ee6c4d;
+  color: white;
+  transition: 03s ease-in-out;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
